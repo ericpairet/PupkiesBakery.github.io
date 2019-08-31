@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="icon.png" />
 
 		<!-- EDIT: title -->
-    <title>Paola Ardón</title>
+    <title>Pupkies Bakery</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -34,570 +34,85 @@
   </head>
 
   <body>
+    <!--virtual anchor to roll back to top of the website -->
+    <div id="home"/>
 
-	<div id="header" class="header">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<!-- EDIT: name -->
-          <img src="../images/profile.jpg" style="width:250px;height:250px;">
-					<h1>Paola Ardón</h1>
-					<!-- EDIT: title | email -->
-					<h3>PhD Candidate at Edinburgh Centre for Robotics | <a href="mailto:paola.ardon@ed.ac.uk" target="_blank">paola.ardon@ed.ac.uk</a></h3>
-          <h2>Research Interests: Affordances, robotics, grasping, machine learning<h2>
+    <script src="js/script.js"></script>
 
-          <b><a href="#about">About me</a> &ensp;&ensp;
-          <a href="#resume">Education</a> &ensp;&ensp;
-          <a href="#publications">Publications</a> &ensp;&ensp;
-          <a href="#research">Research Projects</a> &ensp;&ensp;
-          <a href="#activities">Recent Activities</a> &ensp;&ensp;
-          <a href="#contact">Contact</a></b>
+  	<div id="header" class="header">
+  		<div class="container">
+  			<div class="row centered">
+  				<div class="col-lg-12">
 
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.header -->
+  					<!-- EDIT: name -->
+            <!--img src="../images/background.png" style="width:250px;height:250px;"-->
 
+            <a href="#home" class="topic" onclick="openPage('home', this, 'red')">Home</a> &ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="#about" class="topic" onclick="openPage('about', this, 'red')">About us</a> &ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="#menu" class="topic"  onclick="openPage('menu', this, 'red')">Menu</a> &ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="#gallery" class="topic" onclick="openPage('gallery', this, 'red')">Gallery</a> &ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="#events" class="topic" onclick="openPage('events', this, 'red')">Events</a> &ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="#contact" class="topic">Contact Us</a>
 
-	<section id="about" name="about"></section>
-	<div class="about">
-		<div class="container">
-			<div class="row">
+  				</div><!--/.col-lg-12 -->
+  			</div><!--/.row -->
+  		</div><!--/.container -->
+  	</div><!--/.header -->
 
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT ME</h5>
-				</div>
-				<div class="col-lg-6">
-					<!-- EDIT: about -->
+    <div id="about" class="tabcontent">
+      <h3>About</h3>
+      <p>Home is where the heart is..</p>
+    </div>
 
-					<p style="text-align:justify">
-            Currently, I am a Ph.D student at the Edinburgh Centre for Robotics (<a href="https://www.edinburgh-robotics.org/students/paola-ardón-ramírez" target="_blank">ECR</a>) member of the Robust Autonomy and Decisions (<a href="http://rad.inf.ed.ac.uk" target="_blank">Rad</a>) at University of Edinburgh and <a href="http://www.macs.hw.ac.uk/~kl360/SocialRoboricsGroup/" target="_blank">Social robotics group</a> at Heriot-Watt University. For my research project I'm interested in including the affordances in
-            a robust autonomous framework for assistive robots. One of the most needed tasks for robots assisting in indoor environments is manipulation. In order to achieve a robust grasp application autonomy in humanoid robots is essential.
-            Hence the need to improve grasp affordances, specially in dynamic environments.
+    <div id="menu" class="tabcontent">
+      <h3>Menu</h3>
+      <p>Home is where the heart is..</p>
+    </div>
 
-            My previous education includes a master degree on Computer Vision and Robotics, a bachelor's degree on Electrical and Computer Engineering as well as a minor in Business Administration. I have acknowledge on image segmentation, visual servoing, machine learning techniques, optimization, localization and path planning.
-            In industry I worked as a VAP O&M Engineer on monitoring and maintenance of value added platforms (software and hardware).</p>
-				</div>
-				<div class="col-lg-3">
-					<!-- EDIT: download link -->
-          <p><a href="../files/Ardon_resume_EN.pdf" target="_blank"><i class="icon-file"></i> <sm>DOWNLOAD RESUME (EN)</sm></a></p>
-          <p><a href="../files/Ardon_CV_EN.pdf" target="_blank"><i class="icon-file"></i> <sm>DOWNLOAD CURRICULUM VITAE (EN)</sm></a></p>
-          <p><a href="../files/Ardon_CV_SP.pdf" target="_blank"><i class="icon-file"></i> <sm>DESCARGA CURRICULUM VITAE (SP)</sm></a></p>
-				</div>
+    <div id="gallery" class="tabcontent">
+      <h3>Gallery</h3>
+      <p>Home is where the heart is..</p>
+    </div>
 
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
+    <div id="events" class="tabcontent">
+      <h3>Events</h3>
+      <p>Home is where the heart is..</p>
+    </div>
 
+  	<section id="contact" name="contact"></section>
+  	<!--FOOTER DESCRIPTION -->
+  	<div id="footwrap" class="footer">
+  		<div class="container">
+  			<div class="row">
 
-	<section id="resume" name="resume"></section>
-	<!-- EDUCATION SECTION -->
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
-				</div>
-				<!-- EDIT: education line 1 -->
-        <div class="col-lg-6">
-          <p><t>Ph.D Candidate in Robotics and Autonomous Systems </t><br/>
-             Edinburgh Centre for Robotics, CDT. Expected Graduation - November 2021
-            <!--<br/><i>Extra info here</i>-->
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2018 - CURRENT<br/>
-					EDINBURGH, UK</sm>
-        </div>
-        <!-- EDIT: education line 2 -->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Master of Science in Robotics and Autonomous Systems </t><br/>
-             Edinburgh Centre for Robotics, CDT. Graduated with Distinction
-            <!--<br/><i>Extra info here</i>-->
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>AUGUST 2018<br/>
-					EDINBURGH, UK</sm>
-        </div>
-        <!-- EDIT: education line 3 -->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Master of Science in Computer Vision and Robotics </t><br/>
-             VIBOT Erasmus Program. Graduated with Distinction
-            <!--<br/><i>Extra info here</i>-->
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JUNE 2017<br/>
-					FRANCE, SPAIN, UK</sm>
-        </div>
-        <!-- EDIT: education line 4 -->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Bachelor of Science in Electrical and Computer Engineering</t><br/>
-						John Brown University. Graduated cum laude
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>MAY 2013<br/>
-					ARKANSAS, USA</sm>
-					</p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-            <a href="#header">Back to top</a>
-            <!--<br/><i>Extra info here</i>-->
-        </div>
-
-
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-  <section id="publications" name="publications"></section>
-	<!-- PUBLICATIONS SECTION -->
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>PUBLICATIONS</h5>
-				</div>
-        <!-- EDIT: work line 1 -->
-        <div class="col-lg-6 ">
-					<p class="tight" style="text-align:justify"><t> 2019</t><br/>
-					Ardón, P.; Pairet; È., Petrick, R., Ramamoorthy, S.; and Lohan, K. S.
-          "Learning Grasp Affordance Reasoning through Semantic Relations". IEEE Robotics and Automation Letters (RA-L). To be presented at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). November 2019. <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/3ardon2019learning.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/3ardon2019learning.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/3ardon2019learning.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-            <a href="https://youtu.be/aaA3NA-S5KY" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-            <a href="https://paolaardon.github.io/grasp_affordance_reasoning/" target="_blank"><i class="icon-github"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-        <!-- EDIT: work line 1 -->
-        <div class="col-lg-6 col-lg-offset-3 ">
-          <p class="tight" style="text-align:justify"><t> </t><br/>
-					Pairet, È.; Ardón, P.; Mistry, M.; and Petillot, Y.
-          "Learning Generalisable Coupling Terms for Obstacle Avoidance via Low-dimensional Geometric Descriptors". IEEE Robotics and Automation Letters (RA-L). To be presented at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). November 2019. <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/4pairet2019learningb.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/4pairet2019learningb.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/19pairet2019learningb.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-            <a href="https://youtu.be/lym5cCbjI3k" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-				<!-- EDIT: work line 1 -->
-        <div class="col-lg-6 col-lg-offset-3 ">
-          <p class="tight" style="text-align:justify"><t> </t><br/>
-					Ardón, P.; Pairet, È.; Petrick, R.; Ramamoorthy, S.; and Lohan, K. S.
-          "Reasoning on Grasp-Action Affordances", in Conf. Towards Autonomous Robotic Systems. July 2019. <span style="background-color: #FFA07A"> Best Paper Award finalist. </span> <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/2ardon2019reasoning.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/2ardon2019reasoning.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/TAROS_2019.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3 ">
-          <p class="tight" style="text-align:justify"><t> </t><br/>
-					Pairet, È.; Ardón, P.; Mistry, M,; and Petillot, Y.
-          "Learning and Composing Primitive Skills for Dual-arm Manipulation", in Conf. Towards Autonomous Robotic Systems. July 2019. <span style="background-color: #FFA07A"> Advanced Robotics at Queen Mary (ARQ) best paper award. </span> <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/3pairet2019learning.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/3pairet2019learning.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/19pairet2019learning.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3 ">
-          <p class="tight" style="text-align:justify"><t> </t><br/>
-					Pairet, È.; Ardón, P.; Liu, X.; Lopes,J.; Hastie, H.; and Lohan, K. S.
-          "A Digital Twin for Human-Robot Interaction", in ACM/IEEE Intl. Conf. on Human-Robot Interaction. March 2019. <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/1pairet2019digital.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/1pairet2019digital.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/1pairet2019digital.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-            <a href="https://www.youtube.com/watch?v=ev1I1n3hZdg&feature=youtu.be" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-					<p class="tight" style="text-align:justify"><t> 2018</t><br/>
-					Ardón, P.; Pairet, È.; Ramamoorthy, S.; and Lohan, K. S. Towards robust grasps: Using the environment
-          semantics for robotic object affordances. 2018. In AAAI Fall Symposium. Reasoning and Learning in
-          Real-World Systems for Long-Term Autonomy. AAAI Press. <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/18ardon2018towards.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/18ardon2018towards.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/18ardon2018towards.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-					<p class="tight" style="text-align:justify"><t> </t><br/>
-					Pairet, È.; Ardón, P.; Brox, F.; Mistry, M.; and Petillot, Y. 2018a. Learning and generalisation of primitives
-          skills towards robust dual-arm manipulation. In AAAI Fall Symposium. Artificial Intelligence for
-          Reasoning and Learning in Real-World Systems for Long-Term Autonomy. AAAI Press. <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/18pairet2018learningb.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/18pairet2018learningb.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/18pairet2018learningb.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight" style="text-align:justify"><t> </t><br/>
-					Ardón P.; Ramamoorthy, S.; Lohan, K.S.. Object affordances by inferring on the surroundings, In Proc. IEEE
-          Workshop on Advance Robotics and its Social Impact, 2018. In press. <br/>
-					</p>
-					<!--	<p><more>Here's where you put a description of the position you held. Responsibilities, accomplishments - the same as you would do on a standard paper resume, but this will be online and look cooler.</more></p>-->
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/18ardon2018abstract.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/18ardon2018abstract.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/18ardon2018abstract.pdf" target="_blank"><i class="icon-file"></i></a> &ensp;
-          </sm></p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-					<p class="tight" style="text-align:justify"><t> </t><br/>
-					Ardón P.; Dragone, M. and Erden, M. S.Reaching and Grasping of Objects by Humanoid Robots through
-          Visual Servoing. 6 Jun 2018 Haptics: Science, Technology, and Applications. Springer, p. 353-365 13 p.
-          (Lecture Notes in Computer Science; vol. 10894). <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>  <br />
-            <a href="../files/bibtex/18ardon2018reaching.rtf" target="_blank">BibTex</a> &ensp;
-            <a href="../files/abstracts/18ardon2018reaching.rtf" target="_blank">Abstract</a> &ensp;
-            <a href="../files/papers/18ardon2018reaching.pdf" target="_blank"><i class="icon-file"></i> </a> &ensp;
-            <a href="https://www.youtube.com/watch?v=PBCR4UcwPV4" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-            <a href="https://bitbucket.org/paolaArdon/master_thesis_vs_pepper" target="_blank"><i class="icon-bitbucket"></i></a>
-          </sm></p>
-				</div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-            <a href="#header">Back to top</a>
-            <!--<br/><i>Extra info here</i>-->
-        </div>
-
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-  <section id="research" name="research"></section>
-	<!-- RESEARCH PROJECTS SECTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>RESEARCH PROJECTS</h5>
-				</div>
-
-				<!-- EDIT: awards line 1-->
-        <div class="col-lg-6">
-          <p><t>PhD Research on Robotic Object Affordance </t><br/>
-            <p style="text-align:justify"><more>Investigate on action affordances for indoor
-              environment objects with the purpose of improving reaching and grasp behaviours.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2018 - CURRENT<br/>
-					EDINBURGH, UK</sm>
-        </div>
-
-        <!-- EDIT: awards line 1-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>ORCA Hub </t><br/>
-            <p style="text-align:justify"><more>Integration and optimisation of the different robotic platforms and algorithms
-              involved in the development of the project.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <a href="https://www.youtube.com/watch?v=ev1I1n3hZdg&feature=youtu.be" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-          <p><sm>SEPTEMBER 2018 - CURRENT<br/>
-					EDINBURGH, UK</sm>
-        </div>
-
-				<!-- EDIT: awards line 2-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Master thesis on Reasoning Grasp-Action Affordances</t><br/>
-            <p style="text-align:justify"><more>Design and implement a reasoning
-                technique for object grasp-action affordances.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <a href="../files/papers/2018master_thesis_ArdonP.pdf" target="_blank"><i class="icon-file"></i> <sm></sm></a>
-          <p><sm>SPRING 2018 <br/>
-					EDINBURGH, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Master thesis on Visual Servoing and Grasping</t><br/>
-            <p style="text-align:justify"><more>Design and implement a visual servoing
-              system on ALdebaran-Softbank platform for Peper robot to grasp objects. </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <a href="https://www.youtube.com/watch?v=PBCR4UcwPV4" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-          <a href="https://bitbucket.org/paolaArdon/master_thesis_vs_pepper" target="_blank"><i class="icon-bitbucket"></i></a> &ensp;
-          <a href="../files/papers/2017master_thesis_ArdonP.pdf" target="_blank"><i class="icon-file"></i> <sm></sm></a>
-          <p><sm>SPRING 2017 <br/>
-					EDINBURGH, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>SLAM and Object Recognition - Pepper Robot</t><br/>
-            <p style="text-align:justify"><more>Group project - Implemented visual SLAM
-              with object recognition based on ERL - service robots competition rules. </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <a href="https://youtu.be/evFsnWH_bpY" target="_blank"><i class="icon-youtube"></i></a> &ensp;
-          <a href="https://github.com/PaolaArdon/Salt-Pepper" target="_blank"><i class="icon-github"></i></a> &ensp;
-          <a href="../files/papers/2016Robotics_Project_Final_Report.pdf" target="_blank"><i class="icon-file"></i> <sm></sm></a>
-          <p><sm>FALL 2016 <br/>
-					EDINBURGH, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Lunabot NASA Project</t><br/>
-            <p style="text-align:justify"><more>Group project -Lunabotics Mining Competition Project (LMC)
-              organized by NASA. Designed a fully functional prototype of a mining robot that works on the lunar
-              environment collecting regolith. Worked on the electrical system: wireless communication, control and
-              autonomy. Main focus on the IMU system, and autonomy software design. </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <a href="https://www.facebook.com/JBULunabotics/videos/672233036142673/" target="_blank"><i class="icon-facebook"></i></a> &ensp;
-          <a href="../files/papers/2013Systems_Engineering_Paper.pdf" target="_blank"><i class="icon-file"></i> <sm></sm></a>
-          <p><sm>SPRING 2013 <br/>
-					FLORIDA, USA</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Solar Panel Heater</t><br/>
-            <p style="text-align:justify"><more>Group project - Designed the electrical system for a solar panel heater.
-              In charge of the design of: Solar tracking system, settings, monitoring temperature, and user interface
-              features. </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>FALL 2012 <br/>
-					ARKANSAS, USA</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-            <a href="#header">Back to top</a>
-            <!--<br/><i>Extra info here</i>-->
-        </div>
-
-		</div><!--/.row -->
-		<br>
-    <hr>
-	</div><!--/.container -->
-
-<section id="activities" name="activities"></section>
-  <!-- LATEST NEWS SECTION -->
-  <div class="container desc">
-    <div class="row">
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>RECENT ACTIVITIES</h5>
-        </div>
-
-        <!-- EDIT: awards line 1-->
-        <div class="col-lg-6">
-          <p><t>20th Conference on Towards Autonomous Robots and Systems (TAROS) 2019 (<a href="https://www.qmul.ac.uk/robotics/events/taros2019/" target="_blank">TAROS 19</a>)</t><br/>
-            <p style="text-align:justify"><more>Presented our work on Reasoning on Grasp-Action Affordances and got nominated by Springer and Frontier as one of the three best papers in the conference.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JULY 2019<br/>
-          London, UK</sm>
-        </div>
-
-        <!-- EDIT: awards line 1-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Royal Society Summer exhibition (<a href="https://royalsociety.org/science-events-and-lectures/2019/summer-science-exhibition/" target="_blank">RSSE 2019</a>)</t><br/>
-            <p style="text-align:justify"><more>Along with the ORCA team we exhibited our work in an attempt to get the new generation's attention on science.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JULY 2019<br/>
-          London, UK</sm>
-        </div>
-
-        <!-- EDIT: awards line 1-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Universities of Scotland, Scottish Parliament (<a href="https://www.universities-scotland.ac.uk" target="_blank">Scotland's 19</a>)</t><br/>
-            <p style="text-align:justify"><more>Along with Prof. Helen Hastie we shared the research that is being done in the Centre. Many of the people
-               that we talked with knew the good reputation of the program and happily shared with us their ideas about new projects and how robotics and artificial intelligence might help develop those.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>OCTOBER 2018<br/>
-          Edinburgh, UK</sm>
-        </div>
-
-        <!-- EDIT: awards line 1-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Reasoning and Learning in Real-World Systems for Long-Term Autonomy - AAAI Fall Symposium Series (<a href="http://rbr.cs.umass.edu/lta/" target="_blank">LTA 2018</a>)</t><br/>
-            <p style="text-align:justify"><more>I our work at the Artifical intelligence FSS. The symposium series was composed of eight different sessions, each of them with at least 16 presentations of academics and industry interested on improving our technologies in the area of artificial intelligence. The sessions lasted for three days on which not only presentations of the selected papers were held but also very interesting keynotes sharing their views of the field. During these three days, the presentations promoted questions ranging from technical to ethical subjects making the attendees to actively participate and passionately engage in the sessions.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>OCTOBER 2018<br/>
-          ARLINGTON, USA</sm>
-        </div>
-
-        <!-- EDIT: awards line 2-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Edinburgh Centre for Robotics Annual Conference</t><br/>
-            <p style="text-align:justify"><more>I presented the results of my master thesis at the conference. The conference took place in the John McIntyre Conference centre at the University of Edinburgh.
-              It was attended by over 120 students, academics and industry partners.</more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>OCTOBER 2018 <br/>
-          EDINBURGH, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>IEEE Workshop on Advanced Robotics and its Social Impacts (<a href="http://www.arso2018.eu" target="_blank">ARSO 2018</a>)</t><br/>
-            <p style="text-align:justify"><more>I presented my Ph.D proposal on robotic affordances at the workshop. The workshop discussed advanced robotics R&D and its
-               implications to economic and social systems, the focus was particularly on the impact of AI and AI empowered autonomous systems. </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2018 <br/>
-          GENOVA, ITALY</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Pitch Master Class</t><br/>
-            <p style="text-align:justify"><more>I assisted to the pitch master class at Heriot-Watt University in order to improve the presentation skills for both: Long
-              presentations and pitch talks.  </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2018 <br/>
-          EDINBURGH, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>TEDx talk</t><br/>
-            <p style="text-align:justify"><more>I assisted on the setup and showcases of different robotic platforms at the TEDx talk. Sethu Vijayakumar was giving a talk entitled 'Sending your robot to Mars? List of things to pack.' </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2018 <br/>
-          GLASSGOW, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>International Summer School on Deep Learning  (<a href="https://dl-lab.eu" target="_blank">ISSoDL 2018</a>)</t><br/>
-            <p style="text-align:justify"><more>I assisted to the International Summer School on Deep Learning at Gdansk University of Technology.' </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JULY 2018 <br/>
-          GDANKS, POLAND</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>EuroHaptics Conference  (<a href="https://eurohaptics2018.org" target="_blank">EuroHaptics 2018</a>)</t><br/>
-            <p style="text-align:justify"><more>I presented the work ”Reaching and Grasping of Objects by Humanoid
-              Robot through Visual Servoing”.' </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JULY 2018 <br/>
-          PISA, ITALY</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Creativity at Home workshop</t><br/>
-            <p style="text-align:justify"><more>I assisted to the two day Rocket Fuel workshop in Heriot-Watt University in order to improve the creativity skill for research purposes. </more></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>APRIL 2018 <br/>
-          EDINBURGH, UK</sm>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-            <a href="#header">Back to top</a>
-            <!--<br/><i>Extra info here</i>-->
-        </div>
-    </div><!--/.row -->
-    <br>
-  </div><!--/.container -->
-
-
-
-	<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
-	<div id="footwrap" class="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>CONTACT</h5>
-				</div>
-				<!-- EDIT: email -->
-				<div class="col-lg-6">
-					<p><t>Email</t><br/>
-						<a href="mailto:paola.ardon@ed.ac.uk" target="_blank" class="mail">paola.ardon@ed.ac.uk</a> <br/>
-					</p>
-					<!-- EDIT: address -->
-					<p><t>Address</t><br/>
-						Edinburgh <br/>
-						EH144AS <br/>
-						United Kingdom<br/>
-					</p>
-					<!-- EDIT: phone number -->
-				<!-- 	<p><t>Phone</t><br/>
-						<a href="tel:2345678901" class="tel">(234) 567-8901</a> <br/>
-					</p>-->
-				</div>
-				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="https://github.com/PaolaArdon" target="_blank"><i class="icon-github"></i></a>
-						<a href="https://twitter.com/PaolaArdonR" target="_blank"><i class="icon-twitter"></i></a>
-            <a href="https://www.facebook.com/PaoArdon" target="_blank"><i class="icon-facebook"></i></a>
-            <a href="https://www.instagram.com/paola.ardon.ramirez/" target="_blank"><i class="icon-instagram"></i></a>
-						<a href="https://www.linkedin.com/in/paolaardonramirez/" target="_blank"><i class="icon-linkedin"></i></a>
-					</p>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
+  				<div class="col-lg-2 col-lg-offset-1">
+  					<h5>CONTACT</h5>
+  				</div>
+  				<!-- EDIT: email -->
+  				<div class="col-lg-6">
+  					<p><t>Email</t><br/>
+  						<a href="mailto:pupkiesbakery@gmail.com" target="_blank" class="mail">pupkiesbakery@gmail.com</a> <br/>
+  					</p>
+  					<!-- EDIT: address -->
+  					<p><t>Address</t><br/>
+  						Fco. Morazán, Tegucigalpa <br/>
+  						Honduras <br/>
+  					</p>
+  					<!-- EDIT: phone number -->
+  				<!-- 	<p><t>Phone</t><br/>
+  						<a href="tel:2345678901" class="tel">(234) 567-8901</a> <br/>
+  					</p>-->
+  				</div>
+  				<div class="col-lg-3">
+  					<p><t>Contáctanos y Haz tu pedido</t></p>
+  					<p>
+  						<!-- EDIT: Social Links. Replace # with your URL for each -->
+              <a href="https://www.facebook.com/pupkiesbake/" target="_blank"><i class="icon-facebook"></i></a>
+              <a href="https://www.instagram.com/pupkiesbakery/" target="_blank"><i class="icon-instagram"></i></a>
+  					</p>
+  				</div>
+  			</div><!--/.row -->
+  		</div><!--/.container -->
+  	</div><!--/ #footer -->
   </body>
 </html>

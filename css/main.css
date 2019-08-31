@@ -9,6 +9,28 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+.tabcontent {
+  background-color: #FFECCD;
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.tabcontent h3 {
+  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tabcontent p {
+  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+}
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
@@ -60,6 +82,11 @@ a:after {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+.topic {
+  font-size: 25px;
+  font-weight:bold;
+}
+
  hr {
   display: block;
   height: 1px;
@@ -76,11 +103,12 @@ a:after {
 /* Header Wrap */
 .header {
   background: #DDDDDD;
-  padding-top:80px;
+  padding-top:600px;
   text-align:center;
+  background: url(../images/background.png) no-repeat center top;
   background-attachment: relative;
   background-position: center center;
-  min-height: 500px;
+  min-height: 750px;
   width: 100%;
 
   -webkit-background-size: 100%;
@@ -128,6 +156,12 @@ a:after {
   font-size: 20px;
   padding-right: 8px;
   vertical-align: middle;
+}
+
+.own {
+  background: #2f2f2f;
+  padding-top: 250px;
+  padding-bottom: 50px;
 }
 
 .footer {
